@@ -8,7 +8,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    
+    <AppBar position="stick">
+      <Toolbar>Navbar</Toolbar>
+    </AppBar>
   )
 };
 
