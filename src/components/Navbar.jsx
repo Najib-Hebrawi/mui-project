@@ -43,7 +43,11 @@ const UserIconsBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("sm")]: { display: "none" },
 }));
 
+
+
 const Navbar = () => {
+
+
   // her en useState for at lukke og åbner menu.
   const [open, setOpen] = useState(false);
 
