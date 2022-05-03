@@ -11,7 +11,8 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import React from "react";
+
+import React, { useState } from "react";
 
 // theme is from mui
 const StyledToolbar = styled(Toolbar)({
@@ -43,11 +44,7 @@ const UserIconsBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("sm")]: { display: "none" },
 }));
 
-
-
 const Navbar = () => {
-
-
   // her en useState for at lukke og åbner menu.
   const [open, setOpen] = useState(false);
 
