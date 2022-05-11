@@ -1,4 +1,4 @@
-import { Favorite, MoreVert, Share } from "@mui/icons-material";
+import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
 import {
   Avatar,
   Box,
@@ -7,6 +7,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  Checkbox,
   IconButton,
   Typography,
 } from "@mui/material";
@@ -14,7 +15,7 @@ import React from "react";
 
 const Feed = () => {
   return (
-    <Box bgcolor="pink" flex={4} p={2}>
+    <Box flex={4} p={2}>
       <Card>
         <CardHeader
           avatar={
@@ -27,12 +28,12 @@ const Feed = () => {
               <MoreVert />
             </IconButton>
           }
-          title="Shrimp and Chorizo Paella"
+          title="Najibs Faccebook"
           subheader="September 14, 2016"
         />
         <CardMedia
           component="img"
-          height="194"
+          height="20%"
           image="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Paella dish"
         />
@@ -45,12 +46,17 @@ const Feed = () => {
         </CardContent>
 
         <CardActions disableSpacing>
+
           <IconButton aria-label="add to favorites">
-            <Favorite />
+          <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite sx={{color:"red"}}/>} />
           </IconButton>
+
           <IconButton aria-label="share">
-            <Share />
+            <Share  />
           </IconButton>
+
+        
+         
         </CardActions>
       </Card>
     </Box>
