@@ -28,7 +28,6 @@ const Search = styled("div")(({ theme }) => ({
 }));
 
 const IconsBox = styled(Box)(({ theme }) => ({
-  backgroundColor: "red",
   display: "none",
   gap: "20px",
   alignItems: "center",
